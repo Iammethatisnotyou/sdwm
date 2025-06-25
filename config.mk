@@ -1,7 +1,7 @@
 VERSION = 0.11
 CC = clang
 WARNINGS = -Wall -Wextra -Wpedantic -Wshadow
-CFLAGS = -std=c99 -O3
+CFLAGS = -std=c99 -O3 -O0
 XORGFLAGS = -lX11
 DEPFLAGS = -MP -MMD
 

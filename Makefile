@@ -18,6 +18,5 @@ install:
 	chmod 755 $(PREFIX)/bin/$(TARGET)
 uninstall:
 	rm -f $(PREFIX)/bin/$(TARGET)
-	rm -f $(MANPREFIX)/man1/$(MANPAGE)
 
 .PHONY: all clean install uninstall build 
