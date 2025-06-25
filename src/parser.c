@@ -1,6 +1,6 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 #include "parser.h"
 #include "util.h"
@@ -33,14 +33,14 @@
 void parse(void) {
 	char ch;
 	size_t file_size = 0;
-	FILE *fptr = fopen(default_file, "r");
+	FILE *fptr       = fopen(default_file, "r");
 	ptr_check(fptr);
 	while ((ch = fgetc(fptr)) != EOF) file_size++;
 	rewind(fptr);
 
 	char *file_contents = malloc(++file_size);
 	for (size_t i = 0; i < file_size; i++) {
-		ch = fgetc(fptr);
+		ch               = fgetc(fptr);
 		file_contents[i] = ch;
 	}
 	fclose(fptr);

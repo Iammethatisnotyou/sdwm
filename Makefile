@@ -20,5 +20,4 @@ uninstall:
 	rm -f $(PREFIX)/bin/$(TARGET)
 	rm -f $(MANPREFIX)/man1/$(MANPAGE)
 
--include $(OBJECTS:.o=.d)
 .PHONY: all clean install uninstall build 
